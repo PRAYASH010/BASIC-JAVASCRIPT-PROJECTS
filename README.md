@@ -11,6 +11,7 @@ Welcome to the **Basic JavaScript Projects** repository! This collection feature
 ├── Analog Clock/
 ├── BMICalculator/
 ├── backgroundChanger/
+├── Calculator
 ├── classicCounter/
 ├── currency converter/
 └── password generator/
@@ -28,22 +29,26 @@ A simple health calculator that takes a user's weight and height inputs, compute
 4. Background Changer (/backgroundChanger)
 An interactive project that changes the background color of the webpage dynamically, utilizing a random hexadecimal color generator.
 
-5. Classic Counter (/classicCounter)
+5. Calculator (/calculator)
+A calculator that can perform general arithmetic operation.
+
+7. Classic Counter (/classicCounter)
 A fundamental JavaScript application featuring buttons to increase, decrease, or reset a numerical counter value on the screen.
 
-6. Currency Converter (/currency converter)
+8. Currency Converter (/currency converter)
 A practical tool designed to accept user amounts and convert monetary values from one currency denomination to another using conversion rates.
 
-7. Password Generator (/password generator)
+9. Password Generator (/password generator)
 A security utility that automatically generates a strong, random password string based on specified configurations like character length and type.
 
 ## 🛠️ How to Run Locally
 Since these are fundamental client-side web applications, you don't need any complex build configurations or servers to run them!
 
 Clone the repository:
-
+```text
 Bash
-git clone [https://github.com/PRAYASH010/BASIC-JS-PROJECTS.git](https://github.com/PRAYASH010/BASIC-JS-PROJECTS.git)
+git clone https://github.com/PRAYASH010/BASIC-JS-PROJECTS.git
+```
 
 Navigate into the specific directory of the project you want to run.
 
