@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_container{
+    height: 300px;
+}
+.main_container input{
+    width: 243px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+#number_input{
+    height: 25px;
+    padding: 5px;
+}
+.button_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+}
+button{
+
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: transparent;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
