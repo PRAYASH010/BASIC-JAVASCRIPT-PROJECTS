@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Prevents padding from breaking your element widths */
+}
+
+body {
+    min-height: 100vh; /* Better than height: 100vh for mobile responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Cleaner, modern font stack */
+    background: linear-gradient(135deg, #74ebe7 0%, #4facfe 100%); /* Replaced harsh lime with a smooth gradient */
+    padding: 20px;
+}
+
+.main_container {
+    height: 450px; /* Increased slightly to give list items breathing room */
+    width: 320px;  /* Slightly wider for better text readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px; /* Added internal padding so elements aren't squished against borders */
+    border-radius: 12px; /* Smoother, more modern corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Softer, realistic shadow */
+    background-color: #ffffff; /* Clean white card for contrast against the background */
+}
+
+.input_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%; /* Ensures it scales nicely */
+}
+
+.input_wrapper input {
+    flex: 1; /* Allows input to take up available space */
+    height: 40px; /* Thicker, easier-to-tap target */
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0; /* Subtle border instead of just a shadow */
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smooth focus effect */
+}
+
+/* Subtle interactive feedback when user clicks the input */
+.input_wrapper input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+}
+
+.add_btn {
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+/* Hover and click animations for the button */
+.add_btn:hover {
+    background-color: #008be3;
+}
+
+.add_btn:active {
+    transform: scale(0.95);
+}
+
+ul {
+    margin-top: 20px;
+    width: 100%;
+    list-style: none; /* Removes default ugly bullet points */
+    overflow-y: auto; /* Allows scrolling inside the container if the list gets long */
+    padding-right: 4px;
+}
+
+/* Pro-tip: Style your future list items like this for a clean UI */
+ul li {
+    background: #f7f9fa;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #4facfe; /* Nice accent line */
+}
+.delete_btn{
+    padding: 5px;
+    background-color:#008be3;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+.delete_btn:hover{
+    background-color: #008be3;
+}
